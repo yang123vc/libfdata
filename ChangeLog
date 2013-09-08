@@ -1,0 +1,152 @@
+TODO
+* list and write - set is also used by read callback
+  have flag that tells function to initiate write callback ?
+* rewrite
+  - update libfdata_tree_initialize
+* add callback to calculate cache index ?
+  - allow to be NULL by default and fallback to default behavior
+  - separate set function
+* add tests
+* update include header and man page
+  - list
+  - list element (update)
+  - range list
+  - stream (done)
+  - tree
+  - tree node
+  - vector
+  - other
+
+Types:
+* list
+  - reimplement libfdata_list_get_element_index_at_value_index ?
+  - prepend: optimize recalculation of element index ?
+  - add stream like read/write buffer ?
+  - add libfdata_list_set_element_by_index_with_mapped_size
+  - add libfdata_list_prepend_element_with_mapped_size
+  - add libfdata_list_set_element_at_offset
+  - write on set value ? what about create ?
+  - add calculate_cache_entry_index support
+  - implement libfdata_list_read_buffer and libfdata_list_seek_offset ?
+  - add a function to look for data range offset instead of relative list offset
+    libfdata_list_get_element_value_at_offset ?
+* range list
+  - work in progress
+* stream
+  - add mapped offset support ?
+* tree
+  - refactor
+* tree node
+  - refactor
+* vector
+  - refactor
+  - write on set value ? what about create ?
+
+Optimizations:
+* mapped ranges
+  - optimize calculations by adding flag to mapped range ?
+    LIBFDATA_MAPPED_RANGE_FLAG_IS_INVALID
+
+20130908
+* updated dependencies
+* fixed memory leak in error path
+* updated msvscpp files
+* added libcthreads build support
+
+20130718
+* remove unnecessary restriction in library include headers
+
+20130616
+* worked on reference
+
+20130501
+* worked on vector
+
+20130427
+* worked on vector
+
+20130424
+* worked on vector
+
+20130422
+* worked on vector
+
+20130420
+* fix for stream size calculation
+
+20130411
+* worked on range list
+
+20130410
+* worked on range list
+
+20130409
+* worked on range list
+* optimized and fixed append list
+
+20130408
+* worked on range list
+* list initial work on calculate_cache_entry_index callback
+
+20130407
+* worked on refactor to combine fdata and mfdata
+* worked on range list
+
+20130406
+* worked on refactor to combine fdata and mfdata
+* worked on range list
+
+20130405
+* worked on refactor to combine fdata and mfdata
+
+20130404
+* updated dependencies
+* fixes for local library Makefiles
+* worked on refactor to combine fdata and mfdata
+* updated include header and man page
+
+20130403
+* worked on refactor to combine fdata and mfdata
+* worked on list
+* worked on stream
+
+20130402
+* worked on refactor to combine fdata and mfdata
+* worked on list
+* worked on stream
+
+20130401
+* worked on refactor to combine fdata and mfdata
+* stream rewrite
+  - removed list
+  - removed caching
+  - removed segment data functions
+  - added write support
+
+20130320
+* worked on refactor to combine fdata and mfdata
+* worked on stream
+* removed stream reference
+
+20130319
+* worked on refactor to combine fdata and mfdata
+
+20130303
+* worked on refactor to combine fdata and mfdata
+
+20130224
+* 2013 update
+* code clean up
+
+20121216
+* worked on refactor to combine fdata and mfdata
+
+20121215
+* worked on refactor to combine fdata and mfdata
+
+20121212
+* worked on refactor to combine fdata and mfdata
+
+20121211
+* created stand-alone version based on libfguid
+
