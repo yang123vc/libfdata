@@ -78,6 +78,9 @@ Optimizations:
 20140817
 * worked on btree
 
+20140826
+* bug fixes in include header
+
 20140809
 * worked on vector
 
